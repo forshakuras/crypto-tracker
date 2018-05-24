@@ -11,10 +11,6 @@ class AddBar extends Component {
     this.setState({
       interval: setInterval(this.checkCurrentPrice, 3600000)
     });
-    /*this.fetchTimer = setInterval(
-      () => this.checkCurrentPrice(),
-      this.state.frequency
-    );*/
     this.checkCurrentPrice();
   }
   constructor(props) {
